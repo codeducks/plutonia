@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+<title>Plutonia - Programmer Search</title>
+
+<meta charset="UTF-8">
+<meta name="description" content="Better Homepage | Search on StackOverflow or Google directly.">
+<meta name="keywords" content="programmer search, search for programmers">
+<meta name="author" content="faultydev (codeducks)">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="fancypants.js"></script>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="bgtop">
+
+        <h2>plutonia</h2>
+        <p>a programmers search engine.</p>
+
+    </div>
+
+    <div class="mid">
+
+        <input id="search" class="search" type="text" onchange="update()" placeholder="type here">
+        <div class="btns">
+        <input class="submit" type="submit" value="Search on StackOverflow" onclick="stackoverflow()">
+        <input class="submit" type="submit" value="Search on Google" onclick="google()">
+        </div>
+
+    </div>
+
+</body>
+
+<footer class="footer">
+
+    <a href="https://github.com/codeducks/plutonia" style="color: #fff; font-style: oblique;">GitHub</a>
+
+</footer>
+
+</html>
