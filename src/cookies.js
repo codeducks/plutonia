@@ -23,4 +23,11 @@ window.onload = () => {
 
     }
 
+    document.getElementById("se-str").addEventListener('keydown', (e) => { //addEventListener("keyup", function(event) {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        document.getElementById("defaultbtn").click();
+    }
+    });
+
 }
