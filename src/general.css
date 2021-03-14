@@ -1,0 +1,52 @@
+html {
+
+    background-color: #000;
+
+}
+
+.bgtop {
+
+    color: #fff;
+    padding-top: 0.5%;
+    padding-left: 4%;
+    padding-bottom: 0.5%;
+    background-color: #202020;
+
+}
+
+.btns {
+
+    display: block;
+    background-color: #101010;
+
+}
+
+
+.submit:hover {
+
+    background-color: #303030;
+
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    padding: 1vw;
+    color: #fff; 
+    font-style: oblique;
+    background-color: #202020;
+}
+
+.link {
+
+    color: #fff; 
+    font-style: oblique;
+    margin-right: 1%;
+
+}
+
+:focus {outline:none;}
