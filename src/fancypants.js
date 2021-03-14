@@ -41,6 +41,7 @@ window.onload=function(){
     var input = document.createElement("input");
     input.setAttribute('type', 'button');
     input.setAttribute('class', 'submit')
+    input.setAttribute('id', 'defaultbtn')
 
     if (document.cookie) {
         console.log(document.cookie)
@@ -51,6 +52,10 @@ window.onload=function(){
     } else {
         input.setAttribute('value', 'Search with ' + "Google")
         input.setAttribute('onclick', 'search(1)')
+    }
+
+    if (window.location.href.slice(-10).includes('mobile') == true) {
+        input.setAttribute('style', 'font-size: 4vw;')
     }
 
     var parent = document.getElementById("se_list");
