@@ -1,9 +1,26 @@
-function stackoverflow() {
-    var txt = document.getElementById("search").value;
-    window.location.href = "https://stackoverflow.com/search?q=" + escape(txt);
+function search(engine) {
+
+    var input = document.getElementById("search").value;
+
+    switch (engine) {
+
+        case 0: // dev_bible
+            window.location.href = "https://stackoverflow.com/search?q=" + escape(input);
+        break;
+
+        case 1: // ordinary
+            window.location.href = "https://google.com/search?q=" + escape(input);
+        break;
+
+    }
+
 }
 
-function google(){
-    var txt = document.getElementById("search").value;
-    window.location.href = "https://google.com/search?q=" + escape(txt);
+window.onload=function(){
+    document.getElementById("search"). addEventListener('keydown', (e) => { //addEventListener("keyup", function(event) {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        document.getElementById("defaultbtn").click();
+    }
+    });
 }

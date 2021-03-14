@@ -28,10 +28,10 @@
 
     <div class="mid">
 
-        <input id="search" class="search" type="text" onchange="update()" placeholder="type here" autofocus>
+        <input id="search" class="search" type="text" placeholder="type here" autofocus>
         <div class="btns">
-        <input class="submit" type="submit" value="Search on StackOverflow" onclick="stackoverflow()">
-        <input class="submit" type="submit" value="Search on Google" onclick="google()">
+        <input class="submit" type="submit" value="Search on StackOverflow" onclick="search(0)">
+        <input id="defaultbtn" class="submit" type="submit" value="Search on Google" onclick="search(1)">
         </div>
 
     </div>
