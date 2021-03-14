@@ -51,3 +51,5 @@ html {
     color: #fff;
     background-color: #202020;
 }
+
+:focus {outline:none;}

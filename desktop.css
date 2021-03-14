@@ -12,8 +12,6 @@ html {
 
 .mid {
     top: 50%;
-    right: 50%;
-    margin: auto;
     text-align: center;
     padding: 1vw;
     background-color: #202020;
@@ -24,7 +22,10 @@ html {
     color: #ffffff;
     background-color: #101010;
     border: 0;
+    margin: 0;
     width: 49.8%;
+    left: 0;
+    right: 0;
     height: 6%;
 
 }
@@ -47,6 +48,7 @@ html {
 
 .btns {
 
+    display: block;
     background-color: #101010;
 
 }
@@ -61,3 +63,5 @@ html {
     color: #fff;
     background-color: #202020;
 }
+
+:focus {outline:none;}
